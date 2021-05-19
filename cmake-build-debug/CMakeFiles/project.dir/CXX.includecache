@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/graph/Edge.cpp
+Edge.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/graph/Edge.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/graph/Edge.h
+

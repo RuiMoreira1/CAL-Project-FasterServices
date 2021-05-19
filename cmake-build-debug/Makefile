@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project
+CMAKE_SOURCE_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project\cmake-bu
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project\cmake-build-debug\CMakeFiles C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles" "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -142,113 +142,221 @@ project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
-Garage.obj: Garage.cpp.obj
+fasterServices/Garage.obj: fasterServices/Garage.cpp.obj
 
-.PHONY : Garage.obj
-
-# target to build an object file
-Garage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garage.cpp.obj
-.PHONY : Garage.cpp.obj
-
-Garage.i: Garage.cpp.i
-
-.PHONY : Garage.i
-
-# target to preprocess a source file
-Garage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garage.cpp.i
-.PHONY : Garage.cpp.i
-
-Garage.s: Garage.cpp.s
-
-.PHONY : Garage.s
-
-# target to generate assembly for a file
-Garage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Garage.cpp.s
-.PHONY : Garage.cpp.s
-
-Vehicle.obj: Vehicle.cpp.obj
-
-.PHONY : Vehicle.obj
+.PHONY : fasterServices/Garage.obj
 
 # target to build an object file
-Vehicle.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Vehicle.cpp.obj
-.PHONY : Vehicle.cpp.obj
+fasterServices/Garage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Garage.cpp.obj
+.PHONY : fasterServices/Garage.cpp.obj
 
-Vehicle.i: Vehicle.cpp.i
+fasterServices/Garage.i: fasterServices/Garage.cpp.i
 
-.PHONY : Vehicle.i
+.PHONY : fasterServices/Garage.i
 
 # target to preprocess a source file
-Vehicle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Vehicle.cpp.i
-.PHONY : Vehicle.cpp.i
+fasterServices/Garage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Garage.cpp.i
+.PHONY : fasterServices/Garage.cpp.i
 
-Vehicle.s: Vehicle.cpp.s
+fasterServices/Garage.s: fasterServices/Garage.cpp.s
 
-.PHONY : Vehicle.s
+.PHONY : fasterServices/Garage.s
 
 # target to generate assembly for a file
-Vehicle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Vehicle.cpp.s
-.PHONY : Vehicle.cpp.s
+fasterServices/Garage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Garage.cpp.s
+.PHONY : fasterServices/Garage.cpp.s
 
-Worker.obj: Worker.cpp.obj
+fasterServices/Vehicle.obj: fasterServices/Vehicle.cpp.obj
 
-.PHONY : Worker.obj
+.PHONY : fasterServices/Vehicle.obj
 
 # target to build an object file
-Worker.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Worker.cpp.obj
-.PHONY : Worker.cpp.obj
+fasterServices/Vehicle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj
+.PHONY : fasterServices/Vehicle.cpp.obj
 
-Worker.i: Worker.cpp.i
+fasterServices/Vehicle.i: fasterServices/Vehicle.cpp.i
 
-.PHONY : Worker.i
+.PHONY : fasterServices/Vehicle.i
 
 # target to preprocess a source file
-Worker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Worker.cpp.i
-.PHONY : Worker.cpp.i
+fasterServices/Vehicle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Vehicle.cpp.i
+.PHONY : fasterServices/Vehicle.cpp.i
 
-Worker.s: Worker.cpp.s
+fasterServices/Vehicle.s: fasterServices/Vehicle.cpp.s
 
-.PHONY : Worker.s
+.PHONY : fasterServices/Vehicle.s
 
 # target to generate assembly for a file
-Worker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Worker.cpp.s
-.PHONY : Worker.cpp.s
+fasterServices/Vehicle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Vehicle.cpp.s
+.PHONY : fasterServices/Vehicle.cpp.s
 
-client.obj: client.cpp.obj
+fasterServices/Worker.obj: fasterServices/Worker.cpp.obj
 
-.PHONY : client.obj
+.PHONY : fasterServices/Worker.obj
 
 # target to build an object file
-client.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/client.cpp.obj
-.PHONY : client.cpp.obj
+fasterServices/Worker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Worker.cpp.obj
+.PHONY : fasterServices/Worker.cpp.obj
 
-client.i: client.cpp.i
+fasterServices/Worker.i: fasterServices/Worker.cpp.i
 
-.PHONY : client.i
+.PHONY : fasterServices/Worker.i
 
 # target to preprocess a source file
-client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/client.cpp.i
-.PHONY : client.cpp.i
+fasterServices/Worker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Worker.cpp.i
+.PHONY : fasterServices/Worker.cpp.i
 
-client.s: client.cpp.s
+fasterServices/Worker.s: fasterServices/Worker.cpp.s
 
-.PHONY : client.s
+.PHONY : fasterServices/Worker.s
 
 # target to generate assembly for a file
-client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/client.cpp.s
-.PHONY : client.cpp.s
+fasterServices/Worker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/Worker.cpp.s
+.PHONY : fasterServices/Worker.cpp.s
+
+fasterServices/client.obj: fasterServices/client.cpp.obj
+
+.PHONY : fasterServices/client.obj
+
+# target to build an object file
+fasterServices/client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/client.cpp.obj
+.PHONY : fasterServices/client.cpp.obj
+
+fasterServices/client.i: fasterServices/client.cpp.i
+
+.PHONY : fasterServices/client.i
+
+# target to preprocess a source file
+fasterServices/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/client.cpp.i
+.PHONY : fasterServices/client.cpp.i
+
+fasterServices/client.s: fasterServices/client.cpp.s
+
+.PHONY : fasterServices/client.s
+
+# target to generate assembly for a file
+fasterServices/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/fasterServices/client.cpp.s
+.PHONY : fasterServices/client.cpp.s
+
+graph/Edge.obj: graph/Edge.cpp.obj
+
+.PHONY : graph/Edge.obj
+
+# target to build an object file
+graph/Edge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Edge.cpp.obj
+.PHONY : graph/Edge.cpp.obj
+
+graph/Edge.i: graph/Edge.cpp.i
+
+.PHONY : graph/Edge.i
+
+# target to preprocess a source file
+graph/Edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Edge.cpp.i
+.PHONY : graph/Edge.cpp.i
+
+graph/Edge.s: graph/Edge.cpp.s
+
+.PHONY : graph/Edge.s
+
+# target to generate assembly for a file
+graph/Edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Edge.cpp.s
+.PHONY : graph/Edge.cpp.s
+
+graph/Graph.obj: graph/Graph.cpp.obj
+
+.PHONY : graph/Graph.obj
+
+# target to build an object file
+graph/Graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Graph.cpp.obj
+.PHONY : graph/Graph.cpp.obj
+
+graph/Graph.i: graph/Graph.cpp.i
+
+.PHONY : graph/Graph.i
+
+# target to preprocess a source file
+graph/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Graph.cpp.i
+.PHONY : graph/Graph.cpp.i
+
+graph/Graph.s: graph/Graph.cpp.s
+
+.PHONY : graph/Graph.s
+
+# target to generate assembly for a file
+graph/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Graph.cpp.s
+.PHONY : graph/Graph.cpp.s
+
+graph/Node.obj: graph/Node.cpp.obj
+
+.PHONY : graph/Node.obj
+
+# target to build an object file
+graph/Node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Node.cpp.obj
+.PHONY : graph/Node.cpp.obj
+
+graph/Node.i: graph/Node.cpp.i
+
+.PHONY : graph/Node.i
+
+# target to preprocess a source file
+graph/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Node.cpp.i
+.PHONY : graph/Node.cpp.i
+
+graph/Node.s: graph/Node.cpp.s
+
+.PHONY : graph/Node.s
+
+# target to generate assembly for a file
+graph/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Node.cpp.s
+.PHONY : graph/Node.cpp.s
+
+graph/Vertex.obj: graph/Vertex.cpp.obj
+
+.PHONY : graph/Vertex.obj
+
+# target to build an object file
+graph/Vertex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Vertex.cpp.obj
+.PHONY : graph/Vertex.cpp.obj
+
+graph/Vertex.i: graph/Vertex.cpp.i
+
+.PHONY : graph/Vertex.i
+
+# target to preprocess a source file
+graph/Vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Vertex.cpp.i
+.PHONY : graph/Vertex.cpp.i
+
+graph/Vertex.s: graph/Vertex.cpp.s
+
+.PHONY : graph/Vertex.s
+
+# target to generate assembly for a file
+graph/Vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/graph/Vertex.cpp.s
+.PHONY : graph/Vertex.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -277,6 +385,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utilities/Position.obj: utilities/Position.cpp.obj
+
+.PHONY : utilities/Position.obj
+
+# target to build an object file
+utilities/Position.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/utilities/Position.cpp.obj
+.PHONY : utilities/Position.cpp.obj
+
+utilities/Position.i: utilities/Position.cpp.i
+
+.PHONY : utilities/Position.i
+
+# target to preprocess a source file
+utilities/Position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/utilities/Position.cpp.i
+.PHONY : utilities/Position.cpp.i
+
+utilities/Position.s: utilities/Position.cpp.s
+
+.PHONY : utilities/Position.s
+
+# target to generate assembly for a file
+utilities/Position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/utilities/Position.cpp.s
+.PHONY : utilities/Position.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -286,21 +421,36 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... project
-	@echo ... Garage.obj
-	@echo ... Garage.i
-	@echo ... Garage.s
-	@echo ... Vehicle.obj
-	@echo ... Vehicle.i
-	@echo ... Vehicle.s
-	@echo ... Worker.obj
-	@echo ... Worker.i
-	@echo ... Worker.s
-	@echo ... client.obj
-	@echo ... client.i
-	@echo ... client.s
+	@echo ... fasterServices/Garage.obj
+	@echo ... fasterServices/Garage.i
+	@echo ... fasterServices/Garage.s
+	@echo ... fasterServices/Vehicle.obj
+	@echo ... fasterServices/Vehicle.i
+	@echo ... fasterServices/Vehicle.s
+	@echo ... fasterServices/Worker.obj
+	@echo ... fasterServices/Worker.i
+	@echo ... fasterServices/Worker.s
+	@echo ... fasterServices/client.obj
+	@echo ... fasterServices/client.i
+	@echo ... fasterServices/client.s
+	@echo ... graph/Edge.obj
+	@echo ... graph/Edge.i
+	@echo ... graph/Edge.s
+	@echo ... graph/Graph.obj
+	@echo ... graph/Graph.i
+	@echo ... graph/Graph.s
+	@echo ... graph/Node.obj
+	@echo ... graph/Node.i
+	@echo ... graph/Node.s
+	@echo ... graph/Vertex.obj
+	@echo ... graph/Vertex.i
+	@echo ... graph/Vertex.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... utilities/Position.obj
+	@echo ... utilities/Position.i
+	@echo ... utilities/Position.s
 .PHONY : help
 
 

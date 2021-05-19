@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\ZPedro\Documents\cal\CAL-Quickstart\project
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project/cmake-build-debug
+-- Build files have been written to: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/cmake-build-debug

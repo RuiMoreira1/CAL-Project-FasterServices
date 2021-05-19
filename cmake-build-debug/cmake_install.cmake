@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project
+# Install script for directory: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

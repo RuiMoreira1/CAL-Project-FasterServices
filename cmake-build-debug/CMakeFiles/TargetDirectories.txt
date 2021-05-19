@@ -1,3 +1,3 @@
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project/cmake-build-debug/CMakeFiles/project.dir
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/cmake-build-debug/CMakeFiles/project.dir
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/CAL-PROJETCT-FasterServices-main/CAL-PROJETCT-FasterServices-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
