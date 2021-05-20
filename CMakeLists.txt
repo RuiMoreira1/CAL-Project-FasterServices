@@ -1,6 +1,30 @@
 cmake_minimum_required(VERSION 3.17)
-project(project)
+project(Project)
 
-set(CMAKE_CXX_STANDARD 14)
+#set(CMAKE_CXX_STANDARD 14)
+
+set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
+#if (WIN32)
+  #  include_directories("$ENV{SFML_PATH}/include")
+ #   link_directories("$ENV{SFML_PATH}/lib")
+#endif()
+
+#
+include_directories(fasterServices)
+include_directories(graph)
+include_directories(include)
+
+# Build GraphViewerCpp
+set(GRAPHVIEWERCPP_PATH lib/GraphViewerCpp)
+add_subdirectory(${GRAPHVIEWERCPP_PATH})
+include_directories(${GRAPHVIEWERCPP_PATH}/include)
+
+
+
+
+
 
 add_executable(project main.cpp fasterServices/client.cpp fasterServices/Garage.cpp fasterServices/Vehicle.cpp fasterServices/Worker.cpp graph/Graph.cpp graph/Graph.h graph/Node.cpp graph/Node.h graph/Edge.cpp graph/Edge.h graph/Vertex.cpp graph/Vertex.h utilities/Position.cpp utilities/Position.h utilities/MutablePriorityQueue.h)
+target_link_libraries(project graphviewer)

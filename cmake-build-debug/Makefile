@@ -58,27 +58,61 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main"
+CMAKE_SOURCE_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +123,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,11 +131,23 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles" "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\CAL-PROJETCT-FasterServices-main\CAL-PROJETCT-FasterServices-main\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +187,97 @@ project: cmake_check_build_system
 project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
+
+#=============================================================================
+# Target rules for targets named graphviewer
+
+# Build rule for target.
+graphviewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graphviewer
+.PHONY : graphviewer
+
+# fast build rule for target.
+graphviewer/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\CMakeFiles\graphviewer.dir\build.make lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/build
+.PHONY : graphviewer/fast
+
+#=============================================================================
+# Target rules for targets named sfml-system
+
+# Build rule for target.
+sfml-system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-system
+.PHONY : sfml-system
+
+# fast build rule for target.
+sfml-system/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
+.PHONY : sfml-system/fast
+
+#=============================================================================
+# Target rules for targets named sfml-main
+
+# Build rule for target.
+sfml-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-main
+.PHONY : sfml-main
+
+# fast build rule for target.
+sfml-main/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Main\CMakeFiles\sfml-main.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/build
+.PHONY : sfml-main/fast
+
+#=============================================================================
+# Target rules for targets named sfml-window
+
+# Build rule for target.
+sfml-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-window
+.PHONY : sfml-window
+
+# fast build rule for target.
+sfml-window/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+.PHONY : sfml-window/fast
+
+#=============================================================================
+# Target rules for targets named sfml-network
+
+# Build rule for target.
+sfml-network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-network
+.PHONY : sfml-network
+
+# fast build rule for target.
+sfml-network/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Network\CMakeFiles\sfml-network.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+.PHONY : sfml-network/fast
+
+#=============================================================================
+# Target rules for targets named sfml-graphics
+
+# Build rule for target.
+sfml-graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-graphics
+.PHONY : sfml-graphics
+
+# fast build rule for target.
+sfml-graphics/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+.PHONY : sfml-graphics/fast
+
+#=============================================================================
+# Target rules for targets named sfml-audio
+
+# Build rule for target.
+sfml-audio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-audio
+.PHONY : sfml-audio
+
+# fast build rule for target.
+sfml-audio/fast:
+	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+.PHONY : sfml-audio/fast
 
 fasterServices/Garage.obj: fasterServices/Garage.cpp.obj
 
@@ -419,8 +556,19 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... graphviewer
 	@echo ... project
+	@echo ... sfml-audio
+	@echo ... sfml-graphics
+	@echo ... sfml-main
+	@echo ... sfml-network
+	@echo ... sfml-system
+	@echo ... sfml-window
 	@echo ... fasterServices/Garage.obj
 	@echo ... fasterServices/Garage.i
 	@echo ... fasterServices/Garage.s

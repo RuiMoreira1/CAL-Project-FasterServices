@@ -1,1 +1,1 @@
- -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ ../lib/GraphViewerCpp/lib/libgraphviewer.a lib/GraphViewerCpp/SFML/lib/libsfml-graphics-d.a lib/GraphViewerCpp/SFML/lib/libsfml-window-d.a lib/GraphViewerCpp/SFML/lib/libsfml-system-d.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
