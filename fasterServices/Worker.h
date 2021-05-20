@@ -25,6 +25,6 @@ public:
     bool operator!=(const Worker &worker);
 
     friend std::ostream &operator<< ( std::ostream os, const Worker &worker);
-
 };
+
 

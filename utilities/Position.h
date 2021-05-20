@@ -1,6 +1,4 @@
 #pragma once
-
-
 #include <iostream>
 #include <math.h>
 
@@ -9,7 +7,8 @@ using namespace std;
 class Position {
     double latitude, longitude;
 public:
-    Position(double latitude, double longitude);
+    Position(Position &pos) : latitude(pos.getLatitude()), longitude(pos.getLongitude()) {}
+    Position(double latitude, double longitude) : latitude(latitude), longitude(longitude) {}
     Position() = default;
 
     double getLatitude() const;

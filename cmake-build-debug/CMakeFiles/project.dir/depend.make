@@ -19,17 +19,10 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/Worker.h
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.cpp
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.h
 
-CMakeFiles/project.dir/graph/Edge.cpp.obj: ../graph/Edge.cpp
-CMakeFiles/project.dir/graph/Edge.cpp.obj: ../graph/Edge.h
-
+CMakeFiles/project.dir/graph/Graph.cpp.obj: ../utilities/MutablePriorityQueue.h
+CMakeFiles/project.dir/graph/Graph.cpp.obj: ../utilities/Position.h
 CMakeFiles/project.dir/graph/Graph.cpp.obj: ../graph/Graph.cpp
 CMakeFiles/project.dir/graph/Graph.cpp.obj: ../graph/Graph.h
-
-CMakeFiles/project.dir/graph/Node.cpp.obj: ../graph/Node.cpp
-CMakeFiles/project.dir/graph/Node.cpp.obj: ../graph/Node.h
-
-CMakeFiles/project.dir/graph/Vertex.cpp.obj: ../graph/Vertex.cpp
-CMakeFiles/project.dir/graph/Vertex.cpp.obj: ../graph/Vertex.h
 
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp

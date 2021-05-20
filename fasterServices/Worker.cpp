@@ -47,6 +47,6 @@ bool Worker::operator!=(const Worker &worker) {
  * @return
  */
 std::ostream &operator<<(std::ostream os, const Worker &worker) {
-    os << "Nice";
+    os << worker.getAddress() << worker.getId();
     return os;
 }

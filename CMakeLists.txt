@@ -15,6 +15,8 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 include_directories(fasterServices)
 include_directories(graph)
 include_directories(include)
+include_directories(utilities)
+include_directories(resources)
 
 # Build GraphViewerCpp
 set(GRAPHVIEWERCPP_PATH lib/GraphViewerCpp)
@@ -22,9 +24,5 @@ add_subdirectory(${GRAPHVIEWERCPP_PATH})
 include_directories(${GRAPHVIEWERCPP_PATH}/include)
 
 
-
-
-
-
-add_executable(project main.cpp fasterServices/client.cpp fasterServices/Garage.cpp fasterServices/Vehicle.cpp fasterServices/Worker.cpp graph/Graph.cpp graph/Graph.h graph/Node.cpp graph/Node.h graph/Edge.cpp graph/Edge.h graph/Vertex.cpp graph/Vertex.h utilities/Position.cpp utilities/Position.h utilities/MutablePriorityQueue.h)
+add_executable(project main.cpp fasterServices/client.cpp fasterServices/Garage.cpp fasterServices/Vehicle.cpp fasterServices/Worker.cpp graph/Graph.cpp graph/Graph.h utilities/Position.cpp utilities/Position.h utilities/MutablePriorityQueue.h)
 target_link_libraries(project graphviewer)

@@ -6,3 +6,33 @@
 
 #IncludeRegexTransform: 
 
+../utilities/MutablePriorityQueue.h
+vector
+-
+
+../utilities/Position.h
+iostream
+-
+math.h
+-
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/graph/Graph.cpp
+Graph.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/graph/Graph.h
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/graph/Graph.h
+queue
+-
+limits
+-
+unordered_map
+-
+algorithm
+-
+stack
+-
+Position.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/graph/Position.h
+MutablePriorityQueue.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/graph/MutablePriorityQueue.h
+
