@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices
+CMAKE_SOURCE_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project.dir/depend.make
@@ -79,100 +79,128 @@ include CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/main.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/main.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\main.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\main.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\main.cpp"
 
 CMakeFiles/project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\main.cpp > CMakeFiles\project.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\main.cpp" > CMakeFiles\project.dir\main.cpp.i
 
 CMakeFiles/project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\main.cpp -o CMakeFiles\project.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\main.cpp" -o CMakeFiles\project.dir\main.cpp.s
 
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/fasterServices/client.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\client.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/fasterServices/client.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\client.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\client.cpp"
 
 CMakeFiles/project.dir/fasterServices/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/fasterServices/client.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\client.cpp > CMakeFiles\project.dir\fasterServices\client.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\client.cpp" > CMakeFiles\project.dir\fasterServices\client.cpp.i
 
 CMakeFiles/project.dir/fasterServices/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/fasterServices/client.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\client.cpp -o CMakeFiles\project.dir\fasterServices\client.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\client.cpp" -o CMakeFiles\project.dir\fasterServices\client.cpp.s
 
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: ../fasterServices/Garage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/fasterServices/Garage.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Garage.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/fasterServices/Garage.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Garage.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp"
 
 CMakeFiles/project.dir/fasterServices/Garage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/fasterServices/Garage.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp > CMakeFiles\project.dir\fasterServices\Garage.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp" > CMakeFiles\project.dir\fasterServices\Garage.cpp.i
 
 CMakeFiles/project.dir/fasterServices/Garage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/fasterServices/Garage.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp -o CMakeFiles\project.dir\fasterServices\Garage.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Garage.cpp" -o CMakeFiles\project.dir\fasterServices\Garage.cpp.s
 
 CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj: ../fasterServices/Vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Vehicle.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Vehicle.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp"
 
 CMakeFiles/project.dir/fasterServices/Vehicle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/fasterServices/Vehicle.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp > CMakeFiles\project.dir\fasterServices\Vehicle.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp" > CMakeFiles\project.dir\fasterServices\Vehicle.cpp.i
 
 CMakeFiles/project.dir/fasterServices/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/fasterServices/Vehicle.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp -o CMakeFiles\project.dir\fasterServices\Vehicle.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Vehicle.cpp" -o CMakeFiles\project.dir\fasterServices\Vehicle.cpp.s
 
 CMakeFiles/project.dir/fasterServices/Worker.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/fasterServices/Worker.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/fasterServices/Worker.cpp.obj: ../fasterServices/Worker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/fasterServices/Worker.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Worker.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/fasterServices/Worker.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\fasterServices\Worker.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp"
 
 CMakeFiles/project.dir/fasterServices/Worker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/fasterServices/Worker.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp > CMakeFiles\project.dir\fasterServices\Worker.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp" > CMakeFiles\project.dir\fasterServices\Worker.cpp.i
 
 CMakeFiles/project.dir/fasterServices/Worker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/fasterServices/Worker.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp -o CMakeFiles\project.dir\fasterServices\Worker.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp" -o CMakeFiles\project.dir\fasterServices\Worker.cpp.s
 
 CMakeFiles/project.dir/graph/Graph.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/graph/Graph.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/graph/Graph.cpp.obj: ../graph/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/graph/Graph.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\graph\Graph.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\graph\Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/graph/Graph.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\graph\Graph.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp"
 
 CMakeFiles/project.dir/graph/Graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/graph/Graph.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\graph\Graph.cpp > CMakeFiles\project.dir\graph\Graph.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp" > CMakeFiles\project.dir\graph\Graph.cpp.i
 
 CMakeFiles/project.dir/graph/Graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/graph/Graph.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\graph\Graph.cpp -o CMakeFiles\project.dir\graph\Graph.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp" -o CMakeFiles\project.dir\graph\Graph.cpp.s
 
 CMakeFiles/project.dir/utilities/Position.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/utilities/Position.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/utilities/Position.cpp.obj: ../utilities/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/utilities/Position.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\utilities\Position.cpp.obj -c C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\utilities\Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/utilities/Position.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\utilities\Position.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\utilities\Position.cpp"
 
 CMakeFiles/project.dir/utilities/Position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/utilities/Position.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\utilities\Position.cpp > CMakeFiles\project.dir\utilities\Position.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\utilities\Position.cpp" > CMakeFiles\project.dir\utilities\Position.cpp.i
 
 CMakeFiles/project.dir/utilities/Position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/utilities/Position.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\utilities\Position.cpp -o CMakeFiles\project.dir\utilities\Position.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\utilities\Position.cpp" -o CMakeFiles\project.dir\utilities\Position.cpp.s
+
+CMakeFiles/project.dir/GraphImporter.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/GraphImporter.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
+CMakeFiles/project.dir/GraphImporter.cpp.obj: ../GraphImporter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/GraphImporter.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GraphImporter.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphImporter.cpp"
+
+CMakeFiles/project.dir/GraphImporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/GraphImporter.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphImporter.cpp" > CMakeFiles\project.dir\GraphImporter.cpp.i
+
+CMakeFiles/project.dir/GraphImporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/GraphImporter.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphImporter.cpp" -o CMakeFiles\project.dir\GraphImporter.cpp.s
+
+CMakeFiles/project.dir/GraphMaker.cpp.obj: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/GraphMaker.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
+CMakeFiles/project.dir/GraphMaker.cpp.obj: ../GraphMaker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/GraphMaker.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GraphMaker.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphMaker.cpp"
+
+CMakeFiles/project.dir/GraphMaker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/GraphMaker.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphMaker.cpp" > CMakeFiles\project.dir\GraphMaker.cpp.i
+
+CMakeFiles/project.dir/GraphMaker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/GraphMaker.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphMaker.cpp" -o CMakeFiles\project.dir\GraphMaker.cpp.s
 
 # Object files for target project
 project_OBJECTS = \
@@ -182,7 +210,9 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj" \
 "CMakeFiles/project.dir/fasterServices/Worker.cpp.obj" \
 "CMakeFiles/project.dir/graph/Graph.cpp.obj" \
-"CMakeFiles/project.dir/utilities/Position.cpp.obj"
+"CMakeFiles/project.dir/utilities/Position.cpp.obj" \
+"CMakeFiles/project.dir/GraphImporter.cpp.obj" \
+"CMakeFiles/project.dir/GraphMaker.cpp.obj"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
@@ -194,6 +224,8 @@ project.exe: CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj
 project.exe: CMakeFiles/project.dir/fasterServices/Worker.cpp.obj
 project.exe: CMakeFiles/project.dir/graph/Graph.cpp.obj
 project.exe: CMakeFiles/project.dir/utilities/Position.cpp.obj
+project.exe: CMakeFiles/project.dir/GraphImporter.cpp.obj
+project.exe: CMakeFiles/project.dir/GraphMaker.cpp.obj
 project.exe: CMakeFiles/project.dir/build.make
 project.exe: ../lib/GraphViewerCpp/lib/libgraphviewer.a
 project.exe: lib/GraphViewerCpp/SFML/lib/libsfml-graphics-d.a
@@ -202,7 +234,7 @@ project.exe: lib/GraphViewerCpp/SFML/lib/libsfml-system-d.a
 project.exe: CMakeFiles/project.dir/linklibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
 project.exe: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -215,6 +247,6 @@ CMakeFiles/project.dir/clean:
 .PHONY : CMakeFiles/project.dir/clean
 
 CMakeFiles/project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles\project.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles\project.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/project.dir/depend
 

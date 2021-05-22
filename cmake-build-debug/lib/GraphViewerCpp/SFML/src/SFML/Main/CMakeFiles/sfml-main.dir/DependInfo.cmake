@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/src/SFML/Main/MainWin32.cpp" "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/MainWin32.cpp.obj"
+  "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/src/SFML/Main/MainWin32.cpp" "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/MainWin32.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

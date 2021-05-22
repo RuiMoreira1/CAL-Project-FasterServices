@@ -6,12 +6,9 @@
 #include "graphviewer.h"
 #include "Graph.h"
 
-class GraphRenderer {
+class GraphMaker {
 private:
     GraphViewer gv;
-
-    GraphViewer createViewer(bool is_interactive, char const *const vertex_color,
-                             char const *const edge_color) const;
 
     void display(const unsigned &width, const unsigned &height);
 
@@ -19,13 +16,13 @@ private:
 
 public:
 
-    GraphRenderer();
+    GraphMaker();
 
     void setVertTag(bool tag){VertTag = tag;}
 
     void close();
 
-    void draw(const Graph *g);
+    void draw(const Graph<unsigned > *g);
 
 };
 

@@ -13,8 +13,15 @@ using namespace std;
 class GraphImporter{
     private:
 
-    void importNodes(Graph *g,ifstream &nodes_file);
-    void importEdges(Graph *g,ifstream &edges_file);
+    void importNodes(Graph<unsigned > *g,ifstream &NodesFile);
+    void importEdges(Graph<unsigned > *g,ifstream &EdgesFile);
+
+public:
+    GraphImporter();
+
+    Graph<unsigned> *importAll(const string NodesFile,const string EdgesFile);
+
+    vector<Vertex<unsigned> *> importCompany(Graph<unsigned> *g,const string &CompanyFile) const;
 };
 
 #endif //CAL_PROJETCT_FASTERSERVICES_GRAPHIMPORTER_H

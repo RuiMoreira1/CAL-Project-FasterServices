@@ -1,4 +1,7 @@
 #pragma once
+
+#ifndef CAL_PROJETCT_FASTERSERVICES_GRAPH_H
+#define CAL_PROJETCT_FASTERSERVICES_GRAPH_H
 #include <queue>
 #include <limits>
 #include <unordered_map>
@@ -126,6 +129,8 @@ public:
     ~Graph();
 
 };
+
+#endif
 
 
 

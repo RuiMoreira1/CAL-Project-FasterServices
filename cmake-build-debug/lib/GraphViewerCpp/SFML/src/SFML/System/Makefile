@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices
+CMAKE_SOURCE_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,43 +78,43 @@ CMAKE_BINARY_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-Faster
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -125,7 +125,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -145,14 +145,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\progress.marks
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\progress.marks"
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/clean
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/preinstall
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/preinstall
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ sfml-system: lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/
 
 # fast build rule for target.
 sfml-system/fast:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
 .PHONY : sfml-system/fast
 
 Clock.obj: Clock.cpp.obj
@@ -196,7 +196,7 @@ Clock.obj: Clock.cpp.obj
 
 # target to build an object file
 Clock.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj
 .PHONY : Clock.cpp.obj
 
 Clock.i: Clock.cpp.i
@@ -205,7 +205,7 @@ Clock.i: Clock.cpp.i
 
 # target to preprocess a source file
 Clock.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.i
 .PHONY : Clock.cpp.i
 
 Clock.s: Clock.cpp.s
@@ -214,7 +214,7 @@ Clock.s: Clock.cpp.s
 
 # target to generate assembly for a file
 Clock.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.s
 .PHONY : Clock.cpp.s
 
 Err.obj: Err.cpp.obj
@@ -223,7 +223,7 @@ Err.obj: Err.cpp.obj
 
 # target to build an object file
 Err.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj
 .PHONY : Err.cpp.obj
 
 Err.i: Err.cpp.i
@@ -232,7 +232,7 @@ Err.i: Err.cpp.i
 
 # target to preprocess a source file
 Err.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.i
 .PHONY : Err.cpp.i
 
 Err.s: Err.cpp.s
@@ -241,7 +241,7 @@ Err.s: Err.cpp.s
 
 # target to generate assembly for a file
 Err.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.s
 .PHONY : Err.cpp.s
 
 FileInputStream.obj: FileInputStream.cpp.obj
@@ -250,7 +250,7 @@ FileInputStream.obj: FileInputStream.cpp.obj
 
 # target to build an object file
 FileInputStream.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj
 .PHONY : FileInputStream.cpp.obj
 
 FileInputStream.i: FileInputStream.cpp.i
@@ -259,7 +259,7 @@ FileInputStream.i: FileInputStream.cpp.i
 
 # target to preprocess a source file
 FileInputStream.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.i
 .PHONY : FileInputStream.cpp.i
 
 FileInputStream.s: FileInputStream.cpp.s
@@ -268,7 +268,7 @@ FileInputStream.s: FileInputStream.cpp.s
 
 # target to generate assembly for a file
 FileInputStream.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.s
 .PHONY : FileInputStream.cpp.s
 
 Lock.obj: Lock.cpp.obj
@@ -277,7 +277,7 @@ Lock.obj: Lock.cpp.obj
 
 # target to build an object file
 Lock.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj
 .PHONY : Lock.cpp.obj
 
 Lock.i: Lock.cpp.i
@@ -286,7 +286,7 @@ Lock.i: Lock.cpp.i
 
 # target to preprocess a source file
 Lock.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.i
 .PHONY : Lock.cpp.i
 
 Lock.s: Lock.cpp.s
@@ -295,7 +295,7 @@ Lock.s: Lock.cpp.s
 
 # target to generate assembly for a file
 Lock.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.s
 .PHONY : Lock.cpp.s
 
 MemoryInputStream.obj: MemoryInputStream.cpp.obj
@@ -304,7 +304,7 @@ MemoryInputStream.obj: MemoryInputStream.cpp.obj
 
 # target to build an object file
 MemoryInputStream.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj
 .PHONY : MemoryInputStream.cpp.obj
 
 MemoryInputStream.i: MemoryInputStream.cpp.i
@@ -313,7 +313,7 @@ MemoryInputStream.i: MemoryInputStream.cpp.i
 
 # target to preprocess a source file
 MemoryInputStream.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i
 .PHONY : MemoryInputStream.cpp.i
 
 MemoryInputStream.s: MemoryInputStream.cpp.s
@@ -322,7 +322,7 @@ MemoryInputStream.s: MemoryInputStream.cpp.s
 
 # target to generate assembly for a file
 MemoryInputStream.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s
 .PHONY : MemoryInputStream.cpp.s
 
 Mutex.obj: Mutex.cpp.obj
@@ -331,7 +331,7 @@ Mutex.obj: Mutex.cpp.obj
 
 # target to build an object file
 Mutex.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj
 .PHONY : Mutex.cpp.obj
 
 Mutex.i: Mutex.cpp.i
@@ -340,7 +340,7 @@ Mutex.i: Mutex.cpp.i
 
 # target to preprocess a source file
 Mutex.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.i
 .PHONY : Mutex.cpp.i
 
 Mutex.s: Mutex.cpp.s
@@ -349,7 +349,7 @@ Mutex.s: Mutex.cpp.s
 
 # target to generate assembly for a file
 Mutex.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.s
 .PHONY : Mutex.cpp.s
 
 Sleep.obj: Sleep.cpp.obj
@@ -358,7 +358,7 @@ Sleep.obj: Sleep.cpp.obj
 
 # target to build an object file
 Sleep.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj
 .PHONY : Sleep.cpp.obj
 
 Sleep.i: Sleep.cpp.i
@@ -367,7 +367,7 @@ Sleep.i: Sleep.cpp.i
 
 # target to preprocess a source file
 Sleep.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.i
 .PHONY : Sleep.cpp.i
 
 Sleep.s: Sleep.cpp.s
@@ -376,7 +376,7 @@ Sleep.s: Sleep.cpp.s
 
 # target to generate assembly for a file
 Sleep.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.s
 .PHONY : Sleep.cpp.s
 
 String.obj: String.cpp.obj
@@ -385,7 +385,7 @@ String.obj: String.cpp.obj
 
 # target to build an object file
 String.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj
 .PHONY : String.cpp.obj
 
 String.i: String.cpp.i
@@ -394,7 +394,7 @@ String.i: String.cpp.i
 
 # target to preprocess a source file
 String.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.i
 .PHONY : String.cpp.i
 
 String.s: String.cpp.s
@@ -403,7 +403,7 @@ String.s: String.cpp.s
 
 # target to generate assembly for a file
 String.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.s
 .PHONY : String.cpp.s
 
 Thread.obj: Thread.cpp.obj
@@ -412,7 +412,7 @@ Thread.obj: Thread.cpp.obj
 
 # target to build an object file
 Thread.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj
 .PHONY : Thread.cpp.obj
 
 Thread.i: Thread.cpp.i
@@ -421,7 +421,7 @@ Thread.i: Thread.cpp.i
 
 # target to preprocess a source file
 Thread.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.i
 .PHONY : Thread.cpp.i
 
 Thread.s: Thread.cpp.s
@@ -430,7 +430,7 @@ Thread.s: Thread.cpp.s
 
 # target to generate assembly for a file
 Thread.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.s
 .PHONY : Thread.cpp.s
 
 ThreadLocal.obj: ThreadLocal.cpp.obj
@@ -439,7 +439,7 @@ ThreadLocal.obj: ThreadLocal.cpp.obj
 
 # target to build an object file
 ThreadLocal.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj
 .PHONY : ThreadLocal.cpp.obj
 
 ThreadLocal.i: ThreadLocal.cpp.i
@@ -448,7 +448,7 @@ ThreadLocal.i: ThreadLocal.cpp.i
 
 # target to preprocess a source file
 ThreadLocal.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i
 .PHONY : ThreadLocal.cpp.i
 
 ThreadLocal.s: ThreadLocal.cpp.s
@@ -457,7 +457,7 @@ ThreadLocal.s: ThreadLocal.cpp.s
 
 # target to generate assembly for a file
 ThreadLocal.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s
 .PHONY : ThreadLocal.cpp.s
 
 Time.obj: Time.cpp.obj
@@ -466,7 +466,7 @@ Time.obj: Time.cpp.obj
 
 # target to build an object file
 Time.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj
 .PHONY : Time.cpp.obj
 
 Time.i: Time.cpp.i
@@ -475,7 +475,7 @@ Time.i: Time.cpp.i
 
 # target to preprocess a source file
 Time.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.i
 .PHONY : Time.cpp.i
 
 Time.s: Time.cpp.s
@@ -484,7 +484,7 @@ Time.s: Time.cpp.s
 
 # target to generate assembly for a file
 Time.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.s
 .PHONY : Time.cpp.s
 
 Win32/ClockImpl.obj: Win32/ClockImpl.cpp.obj
@@ -493,7 +493,7 @@ Win32/ClockImpl.obj: Win32/ClockImpl.cpp.obj
 
 # target to build an object file
 Win32/ClockImpl.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj
 .PHONY : Win32/ClockImpl.cpp.obj
 
 Win32/ClockImpl.i: Win32/ClockImpl.cpp.i
@@ -502,7 +502,7 @@ Win32/ClockImpl.i: Win32/ClockImpl.cpp.i
 
 # target to preprocess a source file
 Win32/ClockImpl.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.i
 .PHONY : Win32/ClockImpl.cpp.i
 
 Win32/ClockImpl.s: Win32/ClockImpl.cpp.s
@@ -511,7 +511,7 @@ Win32/ClockImpl.s: Win32/ClockImpl.cpp.s
 
 # target to generate assembly for a file
 Win32/ClockImpl.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.s
 .PHONY : Win32/ClockImpl.cpp.s
 
 Win32/MutexImpl.obj: Win32/MutexImpl.cpp.obj
@@ -520,7 +520,7 @@ Win32/MutexImpl.obj: Win32/MutexImpl.cpp.obj
 
 # target to build an object file
 Win32/MutexImpl.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj
 .PHONY : Win32/MutexImpl.cpp.obj
 
 Win32/MutexImpl.i: Win32/MutexImpl.cpp.i
@@ -529,7 +529,7 @@ Win32/MutexImpl.i: Win32/MutexImpl.cpp.i
 
 # target to preprocess a source file
 Win32/MutexImpl.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.i
 .PHONY : Win32/MutexImpl.cpp.i
 
 Win32/MutexImpl.s: Win32/MutexImpl.cpp.s
@@ -538,7 +538,7 @@ Win32/MutexImpl.s: Win32/MutexImpl.cpp.s
 
 # target to generate assembly for a file
 Win32/MutexImpl.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.s
 .PHONY : Win32/MutexImpl.cpp.s
 
 Win32/SleepImpl.obj: Win32/SleepImpl.cpp.obj
@@ -547,7 +547,7 @@ Win32/SleepImpl.obj: Win32/SleepImpl.cpp.obj
 
 # target to build an object file
 Win32/SleepImpl.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj
 .PHONY : Win32/SleepImpl.cpp.obj
 
 Win32/SleepImpl.i: Win32/SleepImpl.cpp.i
@@ -556,7 +556,7 @@ Win32/SleepImpl.i: Win32/SleepImpl.cpp.i
 
 # target to preprocess a source file
 Win32/SleepImpl.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.i
 .PHONY : Win32/SleepImpl.cpp.i
 
 Win32/SleepImpl.s: Win32/SleepImpl.cpp.s
@@ -565,7 +565,7 @@ Win32/SleepImpl.s: Win32/SleepImpl.cpp.s
 
 # target to generate assembly for a file
 Win32/SleepImpl.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.s
 .PHONY : Win32/SleepImpl.cpp.s
 
 Win32/ThreadImpl.obj: Win32/ThreadImpl.cpp.obj
@@ -574,7 +574,7 @@ Win32/ThreadImpl.obj: Win32/ThreadImpl.cpp.obj
 
 # target to build an object file
 Win32/ThreadImpl.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj
 .PHONY : Win32/ThreadImpl.cpp.obj
 
 Win32/ThreadImpl.i: Win32/ThreadImpl.cpp.i
@@ -583,7 +583,7 @@ Win32/ThreadImpl.i: Win32/ThreadImpl.cpp.i
 
 # target to preprocess a source file
 Win32/ThreadImpl.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.i
 .PHONY : Win32/ThreadImpl.cpp.i
 
 Win32/ThreadImpl.s: Win32/ThreadImpl.cpp.s
@@ -592,7 +592,7 @@ Win32/ThreadImpl.s: Win32/ThreadImpl.cpp.s
 
 # target to generate assembly for a file
 Win32/ThreadImpl.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.s
 .PHONY : Win32/ThreadImpl.cpp.s
 
 Win32/ThreadLocalImpl.obj: Win32/ThreadLocalImpl.cpp.obj
@@ -601,7 +601,7 @@ Win32/ThreadLocalImpl.obj: Win32/ThreadLocalImpl.cpp.obj
 
 # target to build an object file
 Win32/ThreadLocalImpl.cpp.obj:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj
 .PHONY : Win32/ThreadLocalImpl.cpp.obj
 
 Win32/ThreadLocalImpl.i: Win32/ThreadLocalImpl.cpp.i
@@ -610,7 +610,7 @@ Win32/ThreadLocalImpl.i: Win32/ThreadLocalImpl.cpp.i
 
 # target to preprocess a source file
 Win32/ThreadLocalImpl.cpp.i:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.i
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.i
 .PHONY : Win32/ThreadLocalImpl.cpp.i
 
 Win32/ThreadLocalImpl.s: Win32/ThreadLocalImpl.cpp.s
@@ -619,7 +619,7 @@ Win32/ThreadLocalImpl.s: Win32/ThreadLocalImpl.cpp.s
 
 # target to generate assembly for a file
 Win32/ThreadLocalImpl.cpp.s:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.s
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.s
 .PHONY : Win32/ThreadLocalImpl.cpp.s
 
 # Help Target
@@ -694,6 +694,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\ruipe\OneDrive\Documentos\GitHub\CAL-PROJETCT-FasterServices\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\ZPedro\DOCUME~1\cal\CAL-QU~1\NOVAPA~1\CAL-PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
