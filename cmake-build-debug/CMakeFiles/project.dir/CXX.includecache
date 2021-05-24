@@ -21,6 +21,8 @@ Position.h
 ../graph/Position.h
 MutablePriorityQueue.h
 ../graph/MutablePriorityQueue.h
+Graph.h
+../graph/Graph.h
 
 ../include/GraphImporter.h
 exception
@@ -762,10 +764,6 @@ utility
 GraphMaker.h
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.h
 
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.cpp
-Graph.h
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
-
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
 queue
 -
@@ -781,12 +779,14 @@ Position.h
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Position.h
 MutablePriorityQueue.h
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/MutablePriorityQueue.h
+Graph.h
+C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
 
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/main.cpp
 iostream
 -
-graphviewer.h
-C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graphviewer.h
+graph/Graph.h
+C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
 GraphMaker.h
 C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.h
 

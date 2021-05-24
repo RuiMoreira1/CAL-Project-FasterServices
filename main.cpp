@@ -1,5 +1,5 @@
 #include <iostream>
-#include "graphviewer.h"
+#include "graph/Graph.h"
 #include "GraphMaker.h"
 
 int main() {
@@ -17,9 +17,9 @@ int main() {
     return 0;*/
     GraphMaker g1;
     Graph<unsigned > *graph = new Graph<unsigned >;
-    /*graph->addVertex(1,2,2);
+    graph->addVertex(1,2,2);
     graph->addVertex(2,4,5);
     graph->addEdge(1,2);
-    g1.draw(graph);*/
+    g1.draw(graph);
 
 }

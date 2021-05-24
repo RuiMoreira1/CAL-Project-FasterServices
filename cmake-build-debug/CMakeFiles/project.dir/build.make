@@ -146,24 +146,10 @@ CMakeFiles/project.dir/fasterServices/Worker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/fasterServices/Worker.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\fasterServices\Worker.cpp" -o CMakeFiles\project.dir\fasterServices\Worker.cpp.s
 
-CMakeFiles/project.dir/graph/Graph.cpp.obj: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/graph/Graph.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
-CMakeFiles/project.dir/graph/Graph.cpp.obj: ../graph/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/graph/Graph.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\graph\Graph.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp"
-
-CMakeFiles/project.dir/graph/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/graph/Graph.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp" > CMakeFiles\project.dir\graph\Graph.cpp.i
-
-CMakeFiles/project.dir/graph/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/graph/Graph.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\graph\Graph.cpp" -o CMakeFiles\project.dir\graph\Graph.cpp.s
-
 CMakeFiles/project.dir/utilities/Position.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/utilities/Position.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/utilities/Position.cpp.obj: ../utilities/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/utilities/Position.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/utilities/Position.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\utilities\Position.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\utilities\Position.cpp"
 
 CMakeFiles/project.dir/utilities/Position.cpp.i: cmake_force
@@ -177,7 +163,7 @@ CMakeFiles/project.dir/utilities/Position.cpp.s: cmake_force
 CMakeFiles/project.dir/GraphImporter.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/GraphImporter.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/GraphImporter.cpp.obj: ../GraphImporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/GraphImporter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/GraphImporter.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GraphImporter.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphImporter.cpp"
 
 CMakeFiles/project.dir/GraphImporter.cpp.i: cmake_force
@@ -191,7 +177,7 @@ CMakeFiles/project.dir/GraphImporter.cpp.s: cmake_force
 CMakeFiles/project.dir/GraphMaker.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/GraphMaker.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
 CMakeFiles/project.dir/GraphMaker.cpp.obj: ../GraphMaker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/GraphMaker.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/GraphMaker.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GraphMaker.cpp.obj -c "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\GraphMaker.cpp"
 
 CMakeFiles/project.dir/GraphMaker.cpp.i: cmake_force
@@ -209,7 +195,6 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/fasterServices/Garage.cpp.obj" \
 "CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj" \
 "CMakeFiles/project.dir/fasterServices/Worker.cpp.obj" \
-"CMakeFiles/project.dir/graph/Graph.cpp.obj" \
 "CMakeFiles/project.dir/utilities/Position.cpp.obj" \
 "CMakeFiles/project.dir/GraphImporter.cpp.obj" \
 "CMakeFiles/project.dir/GraphMaker.cpp.obj"
@@ -222,7 +207,6 @@ project.exe: CMakeFiles/project.dir/fasterServices/client.cpp.obj
 project.exe: CMakeFiles/project.dir/fasterServices/Garage.cpp.obj
 project.exe: CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj
 project.exe: CMakeFiles/project.dir/fasterServices/Worker.cpp.obj
-project.exe: CMakeFiles/project.dir/graph/Graph.cpp.obj
 project.exe: CMakeFiles/project.dir/utilities/Position.cpp.obj
 project.exe: CMakeFiles/project.dir/GraphImporter.cpp.obj
 project.exe: CMakeFiles/project.dir/GraphMaker.cpp.obj
@@ -234,7 +218,7 @@ project.exe: lib/GraphViewerCpp/SFML/lib/libsfml-system-d.a
 project.exe: CMakeFiles/project.dir/linklibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
 project.exe: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

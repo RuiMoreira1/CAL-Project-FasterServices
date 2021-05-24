@@ -108,13 +108,7 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/Worker.h
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/client.cpp
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/client.h
-CMakeFiles/project.dir/graph/Graph.cpp.obj
- ../utilities/MutablePriorityQueue.h
- ../utilities/Position.h
- C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.cpp
- C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
 CMakeFiles/project.dir/main.cpp.obj
- ../graph/Graph.h
  ../include/GraphMaker.h
  ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp
@@ -195,6 +189,7 @@ CMakeFiles/project.dir/main.cpp.obj
  ../lib/GraphViewerCpp/include/lines.h
  ../utilities/MutablePriorityQueue.h
  ../utilities/Position.h
+ C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/graph/Graph.h
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/main.cpp
 CMakeFiles/project.dir/utilities/Position.cpp.obj
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/utilities/Position.cpp

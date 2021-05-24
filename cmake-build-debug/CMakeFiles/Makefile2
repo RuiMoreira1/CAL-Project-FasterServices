@@ -282,7 +282,7 @@ CMakeFiles/project.dir/all: lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/s
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 72
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 73
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/project.dir/rule
@@ -311,7 +311,7 @@ lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/all: lib/GraphViewerCpp/SFML/src/S
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 64
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 65
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/rule
@@ -333,12 +333,12 @@ lib/GraphViewerCpp/CMakeFiles/graphviewer.dir/clean:
 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\System\CMakeFiles\sfml-system.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target sfml-system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target sfml-system"
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule
@@ -360,12 +360,12 @@ lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/clean:
 lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Main\CMakeFiles\sfml-main.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Main\CMakeFiles\sfml-main.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=56,57 "Built target sfml-main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=56 "Built target sfml-main"
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/all
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/rule
@@ -392,7 +392,7 @@ lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all: lib/Grap
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 34
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/rule
@@ -414,12 +414,12 @@ lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/clean:
 lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/all: lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Network\CMakeFiles\sfml-network.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib\GraphViewerCpp\SFML\src\SFML\Network\CMakeFiles\sfml-network.dir\build.make lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=58,59,60,61,62,63,64,65,66 "Built target sfml-network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" --progress-num=57,58,59,60,61,62,63,64,65 "Built target sfml-network"
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/all
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 22
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/rule
@@ -447,7 +447,7 @@ lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: lib/
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 60
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
@@ -474,7 +474,7 @@ lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: lib/GraphV
 
 # Build rule for subdir invocation for target.
 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 30
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ZPedro\Documents\cal\CAL-Quickstart\Nova pasta\CAL-PROJETCT-FasterServices\cmake-build-debug\CMakeFiles" 0
 .PHONY : lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule

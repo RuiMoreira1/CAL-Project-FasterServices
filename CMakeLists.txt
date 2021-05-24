@@ -24,5 +24,5 @@ add_subdirectory(${GRAPHVIEWERCPP_PATH})
 include_directories(${GRAPHVIEWERCPP_PATH}/include)
 
 
-add_executable(project main.cpp fasterServices/client.cpp fasterServices/Garage.cpp fasterServices/Vehicle.cpp fasterServices/Worker.cpp graph/Graph.cpp graph/Graph.h utilities/Position.cpp utilities/Position.h utilities/MutablePriorityQueue.h GraphImporter.cpp include/GraphImporter.h GraphMaker.cpp include/GraphMaker.h)
+add_executable(project main.cpp fasterServices/client.cpp fasterServices/Garage.cpp fasterServices/Vehicle.cpp fasterServices/Worker.cpp  graph/Graph.h utilities/Position.cpp utilities/Position.h utilities/MutablePriorityQueue.h GraphImporter.cpp include/GraphImporter.h GraphMaker.cpp include/GraphMaker.h)
 target_link_libraries(project graphviewer)
