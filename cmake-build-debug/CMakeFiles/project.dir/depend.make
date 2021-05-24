@@ -108,6 +108,8 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/Worker.h
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.cpp
 CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.h
 
+CMakeFiles/project.dir/main.cpp.obj: ../graph/Graph.h
+CMakeFiles/project.dir/main.cpp.obj: ../include/GraphImporter.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/GraphMaker.h
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp

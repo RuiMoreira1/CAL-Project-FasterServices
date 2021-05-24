@@ -11,7 +11,7 @@ GraphMaker::GraphMaker()  {
 void GraphMaker::display(const unsigned int &width, const unsigned int &height) {
     gv.setCenter(sf::Vector2f(300, 300));
     gv.createWindow(width,height);
-    gv.join();
+
 
 }
 
@@ -24,7 +24,8 @@ void GraphMaker::draw(const Graph<unsigned int> *g) {
 
     for (Vertex<unsigned> *v : g->getVertexSet()) {
         for (Edge<unsigned> *e : v->getAdj())
-            gv.addEdge(e->getEdgeId(), gv.getNode(v->getInfo()) , gv.getNode(e->getDest()->getInfo()),GraphViewer::Edge::EdgeType::DIRECTED);
+            gv.addEdge(e->getEdgeId(), gv.getNode(v->getInfo()) , gv.getNode(e->getDest()->getInfo()),GraphViewer::Edge::EdgeType::UNDIRECTED);
     }
+    gv.join();
 }
 

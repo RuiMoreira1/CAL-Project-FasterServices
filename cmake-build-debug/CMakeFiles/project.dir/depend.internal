@@ -109,6 +109,8 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/client.cpp
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/client.h
 CMakeFiles/project.dir/main.cpp.obj
+ ../graph/Graph.h
+ ../include/GraphImporter.h
  ../include/GraphMaker.h
  ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp

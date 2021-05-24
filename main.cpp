@@ -1,6 +1,7 @@
 #include <iostream>
 #include "graph/Graph.h"
 #include "GraphMaker.h"
+#include "GraphImporter.h"
 
 int main() {
     /*GraphViewer gv;                         // Instantiate GraphViewer
@@ -16,10 +17,11 @@ int main() {
     gv.join();                     // Join viewer thread (blocks till window closed)
     return 0;*/
     GraphMaker g1;
-    Graph<unsigned > *graph = new Graph<unsigned >;
-    graph->addVertex(1,2,2);
-    graph->addVertex(2,4,5);
-    graph->addEdge(1,2);
+    GraphImporter *gM = new GraphImporter();
+    Graph<unsigned > *graph = gM->importAll("resources/maps/GridGraphs/8x8/nodes.txt","resources/maps/GridGraphs/8x8/edges.txt");
+    //graph->addVertex(1,200,200);
+    //graph->addVertex(2,324,435);
+    //graph->addEdge(1,2);
     g1.draw(graph);
 
 }

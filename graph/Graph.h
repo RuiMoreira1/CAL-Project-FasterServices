@@ -130,7 +130,16 @@ public:
 
 };
 
-#include "Graph.h"
+template<class T>
+Vertex<T>* Graph<T>::findVertex(const T &in) const{
+    for(auto v:vertexSet){
+        if(v->info == in){
+            return v;
+        }
+    }
+    return nullptr;
+}
+
 
 template<class T>
 bool Vertex<T>::operator<(Vertex<T> &vertex) const {
@@ -142,6 +151,12 @@ void Vertex<T>::addEdge(Edge <T> *edge, double weigth, int edgeID) {
     Edge<T> *e = new Edge<T>(this, edge, weigth, edgeID);
     adj.push_back(e);
     edge->inc.push_back(e);
+}
+
+template <class T> void Vertex<T>::addEdge(Vertex<T> *d, double w, int edgeId) {
+    Edge<T> *e = new Edge<T>(this, d, w, edgeId);
+    adj.push_back(e);
+    d->inc.push_back(e);
 }
 
 
