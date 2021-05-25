@@ -37,10 +37,7 @@ private:
     vector<vector<meetingPath>> meeting_path;
     vector<unsigned> bus_capacities;
 
-
-
-    void ResetUsedVertexes(void);
-
+    void tempResetVertexes();
 
     void MakeMeetPath(meetingPath &mp, unsigned const s, unsigned const t) const;
 

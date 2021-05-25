@@ -214,6 +214,13 @@ vector<unsigned> Solver::tsp() {
     return vertex_path;
 }
 
+void Solver::tempResetVertexes() {
+    for ( auto *v: this->used_vertexes ){
+        v->visited =  false;
+    }
+    this->used_vertexes.clear();
+}
+
 void Solver::DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *currentVertex, MutablePriorityQueue<MeetingPoint> &meetingQueue,
                      unsigned assignedMPoints){
     if( assignedMPoints > d_max ) return;
@@ -241,5 +248,45 @@ void Solver::DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *current
     for(Edge<unsigned> *edge: currentVertex->adj ){
         if( !(edge->getDest()->visited) ) DeepFirstSearch(worker, edge->getDest(), meetingQueue, assignedMPoints + edge->getWeight());
     }
+}
+
+void Solver::assignMeetingPoints() {
+    MutablePriorityQueue<MeetingPoint> meetingQueue;
+
+    for (Vertex<unsigned> *v : this->g->getVertexSet()) v->visited = false;
+
+    for (Vertex<unsigned> *w : this->workers) {
+        tempResetVertexes();
+        DeepFirstSearch(w, w, meetingQueue);
+    }
+
+    size_t workerAssigned = 0;
+
+    while (!meetingQueue.empty()) {
+        MeetingPoint *meeting = meetingQueue.extractMin();
+        for (Vertex<unsigned> *w : meeting->getWorkers()) {
+            ++workerAssigned;
+            for (MeetingPoint &meet : this->meeting_pointss) {
+                if (meet.isProcessed() && meet != *meeting) {
+                    if (meet.removeWorker(w))
+                        meetingQueue.decreaseKey(&meet);
+                }
+            }
+        }
+    }
+
+    if (workerAssigned < this->workers.size()) cout << "Workers without a meeting point -> " << this->workers.size() - workerAssigned;
+        //throw WorkersWithoutMeetingPoint(this->workers.size() - worker_cnt);
+
+    //Remove meeting point if no worker is assigned to it
+    auto its =
+            remove_if(meeting_pointss.begin(), meeting_pointss.end(),
+                      [](MeetingPoint &m) { return m.getWorkers().size() == 0; });
+
+    this->meeting_pointss.erase(its, meeting_pointss.end());
+
+    //May not need const & (vertexSet to but might need to be created a set)
+    for (const auto& v : meeting_pointss)
+        v.getVertex()->vertexSet(MEETINGPOINT);
 }
 
