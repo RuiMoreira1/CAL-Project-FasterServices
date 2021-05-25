@@ -57,7 +57,7 @@ private:
 
 
     //Might be necessary to move to the public side
-    bool operator<(Vertex<T> &vertex) const; // required by MutablePriorityQueue
+    //bool operator<(Vertex<T> &vertex) const; // required by MutablePriorityQueue
 
     void addEdge(Edge<T> *edge, double weigth, int edgeID);
 
@@ -122,9 +122,13 @@ public:
     VertexType getVertexType() const { return this->vType; }
 
     //bool operator<(Vertex<T> &vertex) const; // required by MutablePriorityQueue
+    bool operator<(Vertex<T> &vertex) const; // required by MutablePriorityQueue
+
+    bool operator==(Vertex<T> &vertex) const;
 
     friend class Graph<T>;
     friend class MutablePriorityQueue<Vertex<T>>;
+    friend class Solver;
 };
 
 /* ================================================================================================
@@ -382,6 +386,11 @@ template <class T> void Vertex<T>::addEdge(Vertex<T> *d, double w, int edgeId) {
     Edge<T> *e = new Edge<T>(this, d, w, edgeId);
     adj.push_back(e);
     d->inc.push_back(e);
+}
+
+template<class T>
+bool Vertex<T>::operator==(Vertex<T> &vertex) const {
+    return vertex.getInfo() == info;
 }
 
 template<class T> Graph<T>::~Graph() {

@@ -214,3 +214,32 @@ vector<unsigned> Solver::tsp() {
     return vertex_path;
 }
 
+void Solver::DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *currentVertex, MutablePriorityQueue<MeetingPoint> &meetingQueue,
+                     unsigned assignedMPoints){
+    if( assignedMPoints > d_max ) return;
+
+    currentVertex->visited = true;
+    //They used insert?
+    this->used_vertexes.push_back(currentVertex);
+
+    //Create Meeting point
+    MeetingPoint meetingPoint(currentVertex);
+
+    auto it = find(meeting_pointss.begin(),meeting_pointss.end(), meetingPoint);
+
+    if( it != meeting_pointss.end() ){
+        it->addWorker(worker);
+
+        if( it->isProcessed() ) meetingQueue.decreaseKey(&(*it));
+
+        else{
+            it->setProcessed(true); meetingQueue.insert(&(*it));
+        }
+
+    }
+
+    for(Edge<unsigned> *edge: currentVertex->adj ){
+        if( !(edge->getDest()->visited) ) DeepFirstSearch(worker, edge->getDest(), meetingQueue, assignedMPoints + edge->getWeight());
+    }
+}
+

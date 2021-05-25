@@ -9,6 +9,7 @@
 
 #include "Graph.h"
 #include "GraphImporter.h"
+#include "MeetingPoint.h"
 
 #define DEAD_EDGE pair<unsigned, unsigned>
 #define ASSIGNED_BUSES_TYPE vector<vector<unsigned>>
@@ -23,6 +24,7 @@ private:
     Graph<unsigned> *g;
     vector<Vertex<unsigned> *> workers;
     vector<Vertex<unsigned> *> meeting_points;
+    vector<MeetingPoint> meeting_pointss;
     vector<DEAD_EDGE> dead_edges;
 
     double d_max = 0;
@@ -96,7 +98,8 @@ public:
 
     void assignMeetingPoints();
 
-    ;
+    void DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *currentVertex, MutablePriorityQueue<MeetingPoint> &meetingQueue,
+                         unsigned assignedMPoints = 0);
 
     int tspInit(vector<bool> &visited);
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML
+# Install script for directory: C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,31 +32,36 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/objdump.exe")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/license.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/license.md")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/readme.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/readme.md")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/extlibs/bin/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/extlibs/bin/x64/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/extlibs/libs-mingw/x64/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake"
-         "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
+         "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -65,23 +70,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/CMakeFiles/Export/lib/cmake/SFML/SFMLSharedTargets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES
-    "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfig.cmake"
-    "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigDependencies.cmake"
-    "C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigVersion.cmake"
+    "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfig.cmake"
+    "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigDependencies.cmake"
+    "C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/SFMLConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake")
+  include("C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake")
 
 endif()
 

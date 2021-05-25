@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp
+# Install script for directory: C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,9 +32,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/objdump.exe")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/cmake_install.cmake")
+  include("C:/Users/ruipe/OneDrive/Documentos/GitHub/CAL-PROJETCT-FasterServices/cmake-build-debug/lib/GraphViewerCpp/SFML/cmake_install.cmake")
 
 endif()
 
