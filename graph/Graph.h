@@ -198,6 +198,8 @@ public:
     bool addEdge(Vertex<T> *v1, Vertex<T> *v2, double w);
     bool addEdgeInOrder(const T &sourc, const T &dest, double w);
 
+    Vertex<T> * initSingleSource(const T &source);
+
     bool dijkstraShortestPath(const T &source);
 
     bool dijkstraShortestPath(const T &source, const T &destination);
@@ -215,6 +217,8 @@ public:
     void clearEmptyVert(void);
 
     ~Graph();
+
+    friend class Vertex<T>;
 
 };
 
@@ -506,10 +510,41 @@ template <class T> void Graph<T>::clearEmptyVert(void) {
     }
 }
 
+template <class T> Vertex<T> *Graph<T>::initSingleSource(const T &source) {
+    for (auto vertex : vertexSet) {
+        vertex->dist = LARGEST;
+        vertex->path = nullptr;
+    }
 
+    auto src = findVertex(source);
+    if (src == nullptr)
+        return nullptr;
 
+    src->dist = 0;
+    return src;
+}
 
+template <class T> bool Graph<T>::dijkstraShortestPath(const T &source) {
+    auto src = initSingleSource(source);
+    if (src == nullptr) return false;
 
+    MutablePriorityQueue<Vertex<T>> pQueue;
+    pQueue.insert(src);
+    Vertex<T> *vertex;
+    while (!pQueue.empty()) {
+        vertex = pQueue.extractMin();
+        for (Edge<T> *edge : vertex->adj) {
+            auto oldDist = edge->dest->dist;
+
+            if (relax(vertex, edge->dest, edge->weight)) {
+                if (oldDist == LARGEST) pQueue.insert(edge->dest);
+                else pQueue.decreaseKey(edge->dest);
+            }
+        }
+    }
+
+    return true;
+}
 
 
 #endif

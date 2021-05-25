@@ -65,7 +65,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Solver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/Solver.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.internal" afterDir="false" />
@@ -74,8 +73,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/includes_CXX.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/linklibs.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
@@ -321,7 +318,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/SFML/src/SFML/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/graphviewer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/lib/GraphViewerCpp/graphviewer.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fasterServices/Garage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/Garage.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fasterServices/Garage.h" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/Garage.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fasterServices/Vehicle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/Vehicle.cpp" afterDir="false" />
@@ -330,6 +326,7 @@
       <change beforePath="$PROJECT_DIR$/fasterServices/Worker.h" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/Worker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fasterServices/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/client.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fasterServices/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/fasterServices/client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/Graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/GraphImporter.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GraphImporter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/GraphMaker.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GraphMaker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/MeetingPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/MeetingPoint.h" afterDir="false" />
