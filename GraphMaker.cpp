@@ -36,6 +36,7 @@ void GraphMaker::draw(const Graph<unsigned int> *g) {
             gv.addEdge(e->getEdgeId(), gv.getNode(v->getInfo()) , gv.getNode(e->getDest()->getInfo()),GraphViewer::Edge::EdgeType::UNDIRECTED);
     }
 
+
 }
 
 void GraphMaker::routeDraw(const Graph<unsigned> *g,
@@ -51,16 +52,53 @@ void GraphMaker::routeDraw(const Graph<unsigned> *g,
     size_t i = 0;
     for (auto it = vertex_path.begin() + 1; it != vertex_path.end(); ++it) {
         for (Edge<unsigned> *edge : start->getAdj()) {
+            //cout << start->getInfo() << (*it) <<endl;
             if (edge->getDest()->getInfo() == *it) {
-                cout << *it;
+                //cout << start->getInfo() << (*it)<<endl;
+                //cout << *it;
                 int edgeId = edge->getEdgeId();
-                GraphViewer::Edge e1 = gv.getEdge(edgeId);
-                e1.setColor(GraphViewer::BLUE);
+                for(GraphViewer::Edge *edge1  : gv.getEdges()){
+                    if(edge1->getId() == edgeId){
+
+                        edge1->setColor(GraphViewer::ORANGE);
+                        //cout << start->getInfo() << (*it)<<endl;
+                        //cout << "E? "<<edgeId<< endl;
+                        break;
+                    }
+                }
+                //GraphViewer::Edge e1 = gv.getEdge(edgeId);
+                //e1.setColor(sf::Color::Blue);
                 start = edge->getDest();
                 break;
             }
         }
     }
+
+    reverse(vertex_path.begin(),vertex_path.end());
+    for (auto it = vertex_path.begin() + 1; it != vertex_path.end(); ++it) {
+        for (Edge<unsigned> *edge : start->getAdj()) {
+            //cout << start->getInfo() << (*it) <<endl;
+            if (edge->getDest()->getInfo() == *it) {
+                //cout << start->getInfo() << (*it)<<endl;
+                //cout << *it;
+                int edgeId = edge->getEdgeId();
+                for(GraphViewer::Edge *edge1  : gv.getEdges()){
+                    if(edge1->getId() == edgeId){
+
+                        edge1->setColor(GraphViewer::ORANGE);
+                        //cout << start->getInfo() << (*it)<<endl;
+                        //cout << "E? "<<edgeId<< endl;
+                        break;
+                    }
+                }
+                //GraphViewer::Edge e1 = gv.getEdge(edgeId);
+                //e1.setColor(sf::Color::Blue);
+                start = edge->getDest();
+                break;
+            }
+        }
+    }
+    //gv.join();
 }
 
 void GraphMaker::view() {

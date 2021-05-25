@@ -196,7 +196,7 @@ vector<unsigned> Solver::tsp() {
 
     vector<unsigned> vertex_path;
 
-    for(auto i : path){
+    /*for(auto i : path){
         if (i == n){
             vertex_path.push_back(this->V0->getInfo());
         }
@@ -207,6 +207,14 @@ vector<unsigned> Solver::tsp() {
             vertex_path.push_back(meeting_points[i]->getInfo());
             //cout << endl << meeting_points[i]->getInfo() << " " << i<< endl;
         }
+    }*/
+    for(int i = 1; i!= path.size();i++){
+        //cout<< g->findVertex(path[i-1])->getInfo()  << " " << g->findVertex(path[i])->getInfo()<< endl;
+       //cout <<meeting_path[g->findVertex(path[i-1])->getInfo()][g->findVertex(path[i])->getInfo()].path.size() <<endl;
+       for(auto v :meeting_path[g->findVertex(path[i-1])->getInfo()][g->findVertex(path[i])->getInfo()].path){
+           //cout << v<< endl;
+           vertex_path.push_back(v);
+       }
     }
 
 
