@@ -28,7 +28,9 @@ void GraphImporter::importNodes(Graph<unsigned > *g, ifstream &NodesFile) {
 
         //g->addVertex(info, x, y);
        g->addVertex(info,x,y);
+       i++;
     }
+    //cout << i << endl;
 }
 
 
@@ -50,10 +52,12 @@ void GraphImporter::importEdges(Graph<unsigned > *g,ifstream &EdgesFile){
 
         g->addEdge(s,d);
         g->addEdge(d,s);
+        i++;
     }
+    //cout << i;
 }
 
-Graph<unsigned> * GraphImporter::importAll(const string NodesFile,const string EdgesFile,const string WorkersFile, const string G_CFile){
+Graph<unsigned> * GraphImporter::importAll(const string NodesFile,const string EdgesFile,const string WorkersFile, const string G_CFile, const string BusStopsFile){
     ifstream nodes_file(NodesFile);
     if (!nodes_file.is_open()) {
         cout << "nothing1";
@@ -76,12 +80,19 @@ Graph<unsigned> * GraphImporter::importAll(const string NodesFile,const string E
 
     }
 
+    ifstream busStops_file(BusStopsFile);
+    if (!busStops_file.is_open()){
+        cout << "nothing4";
+
+    }
+
     Graph<unsigned> *g = new Graph<unsigned>;
 
     importNodes(g, nodes_file);
     importEdges(g, edges_file);
     importWorkers(g, workers_file);
     importG_C(g,g_c_file);
+    importBusStops(g,busStops_file);
 
     return g;
 }
@@ -98,6 +109,20 @@ void GraphImporter::importWorkers(Graph<unsigned > *g, ifstream &WorkersFile) {
         g->findVertex(info)->vertexSet(RESIDENCE);
 
 
+    }
+}
+
+void GraphImporter::importBusStops(Graph<unsigned > *g, ifstream &BusStopsFile) {
+    string line;
+    unsigned info;
+
+    while (getline(BusStopsFile, line)) {
+        istringstream iss(line);
+
+        iss >> info;
+
+        g->findVertex(info)->vertexSet(BUSSTOP);
+        //cout << info;
     }
 }
 

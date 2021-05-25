@@ -90,9 +90,17 @@ CMakeFiles/project.dir/GraphMaker.cpp.obj
  ../utilities/MutablePriorityQueue.h
  ../utilities/Position.h
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.cpp
+CMakeFiles/project.dir/MeetingPoint.cpp.obj
+ ../graph/Graph.h
+ ../include/MeetingPoint.h
+ ../utilities/MutablePriorityQueue.h
+ ../utilities/Position.h
+ C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/MeetingPoint.cpp
+ C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/MeetingPoint.h
 CMakeFiles/project.dir/Solver.cpp.obj
  ../graph/Graph.h
  ../include/GraphImporter.h
+ ../include/MeetingPoint.h
  ../include/Solver.h
  ../utilities/MutablePriorityQueue.h
  ../utilities/Position.h
@@ -119,6 +127,7 @@ CMakeFiles/project.dir/main.cpp.obj
  ../graph/Graph.h
  ../include/GraphImporter.h
  ../include/GraphMaker.h
+ ../include/MeetingPoint.h
  ../include/Solver.h
  ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp

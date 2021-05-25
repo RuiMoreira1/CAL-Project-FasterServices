@@ -4,38 +4,56 @@
 #include "GraphMaker.h"
 
 GraphMaker::GraphMaker()  {
-    display(1000,1000);
+    display(2000,2000);
+
 
 }
 
 void GraphMaker::display(const unsigned int &width, const unsigned int &height) {
-    gv.setCenter(sf::Vector2f(500, 500));
-    gv.createWindow(width,height);
+    //gv.setCenter(sf::Vector2f(5000, 5000));
+    //gv.createWindow();
+    gv.setCenter(sf::Vector2f(500, 300));
+    gv.createWindow(1000, 600);
 
 
 }
 
 void GraphMaker::draw(const Graph<unsigned int> *g) {
     for (Vertex<unsigned> *v : g->getVertexSet()) {
-        GraphViewer::Node &node0 = gv.addNode(v->getInfo(), sf::Vector2f(v->getPosition()->getLongitude(), v->getPosition()->getLatitude()) );
+        GraphViewer::Node &node0 =gv.addNode(v->getInfo(), sf::Vector2f(v->getPosition()->getLongitude(), v->getPosition()->getLatitude()) );
         if(v->getVertexType() == RESIDENCE){
             node0.setColor(GraphViewer::BLUE);
+            //cout << "Oi1";
         }
         else if(v->getVertexType() == COMPANY){
             node0.setColor(GraphViewer::YELLOW);
+            //cout << "Oi2";
         }
         else if(v->getVertexType() == GARAGE){
             node0.setColor(GraphViewer::GREEN);
+            //cout << "Oi3";
+        }
+        else if(v->getVertexType() == BUSSTOP){
+            //cout << "Oi4";
+
+            node0.setColor(GraphViewer::WHITE);
+        }
+        else if(v->getVertexType() == MEETINGPOINT){
+            //cout << "Oi5";
+
+            node0.setColor(GraphViewer::PINK);
         }
         //if (this->VertTag)
           //  gv.setVertexLabel(v->getInfo(), to_string(v->getInfo()));
+
     }
+    //cout << "lalala"<< endl;
 
     for (Vertex<unsigned> *v : g->getVertexSet()) {
         for (Edge<unsigned> *e : v->getAdj())
             gv.addEdge(e->getEdgeId(), gv.getNode(v->getInfo()) , gv.getNode(e->getDest()->getInfo()),GraphViewer::Edge::EdgeType::UNDIRECTED);
     }
-
+    //cout << "lalala"<< endl;
 
 }
 
@@ -66,8 +84,9 @@ void GraphMaker::routeDraw(const Graph<unsigned> *g,
                         break;
                     }
                 }
-                //GraphViewer::Edge e1 = gv.getEdge(edgeId);
-                //e1.setColor(sf::Color::Blue);
+                //GraphViewer::Edge &e1 = gv.getEdge(edgeId);
+                //e1.setColor(GraphViewer::ORANGE);
+                //e1.setEdgeType(GraphViewer::Edge::DIRECTED);
                 start = edge->getDest();
                 break;
             }
@@ -91,6 +110,8 @@ void GraphMaker::routeDraw(const Graph<unsigned> *g,
                         break;
                     }
                 }
+                //GraphViewer::Edge &e1 = gv.getEdge(edgeId);
+                //e1.setColor(GraphViewer::ORANGE);
                 //GraphViewer::Edge e1 = gv.getEdge(edgeId);
                 //e1.setColor(sf::Color::Blue);
                 start = edge->getDest();

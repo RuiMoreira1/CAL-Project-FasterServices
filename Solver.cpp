@@ -8,8 +8,9 @@
 
 using namespace std;
 
-Solver::Solver(Graph<unsigned int> *g) {
+Solver::Solver(Graph<unsigned int> *g, double  dmax) {
     this->g = g;
+    this->d_max = dmax;
 
     for(auto v : g->getVertexSet()){
         //cout << "V> "<< v->getInfo() << endl;
@@ -17,6 +18,12 @@ Solver::Solver(Graph<unsigned int> *g) {
           this->workers.push_back(v);
 
         }
+        if(v->getVertexType() == BUSSTOP){
+            //this->meeting_points.push_back(v);
+            this->meeting_pointss.push_back(MeetingPoint(v));
+
+        }
+
         else if(v->getVertexType() == COMPANY){
             this->Cn = v;
         }
@@ -25,7 +32,9 @@ Solver::Solver(Graph<unsigned int> *g) {
         }
     }
     //fixGraph();
-    this-> meeting_points = this->workers;
+
+    assignMeetingPoints();
+    //this-> meeting_points = this->workers;
     MakeMeetingDists();
 }
 
@@ -84,18 +93,18 @@ void Solver::MakeMeetingDists() {
                 cout << "oi 1";
                 break;
             }
-            //throw NoPathFound(s, t);
+            //throw
             MakeMeetPath(meeting_path[i][j], s, t);
         }
 
         if (!g->dijkstraBidirectional(s, V0->getInfo())) break;
             //cout << "oi 2";
-        //throw NoPathFound(s, V0);
+        //throw
         MakeMeetPath(meeting_path[i][n], s, V0->getInfo());
 
         if (!g->dijkstraBidirectional(s, Cn->getInfo())) break;
             //cout << "oi 3";
-        //throw NoPathFound(s, Cn);
+        //throw
         MakeMeetPath(meeting_path[i][n + 1], s, Cn->getInfo());
     }
 
@@ -105,7 +114,7 @@ void Solver::MakeMeetingDists() {
             cout << "oi 4";
             break;
         }
-        //throw NoPathFound(V0, t);
+        //throw
         MakeMeetPath(meeting_path[n][i], V0->getInfo(), t);
     }
 
@@ -115,7 +124,7 @@ void Solver::MakeMeetingDists() {
             cout << "oi 5";
             break;
         }
-        //throw NoPathFound(Cn, t);
+        //throw
         MakeMeetPath(meeting_path[n + 1][i], Cn->getInfo(), t);
     }
 
@@ -126,7 +135,7 @@ void Solver::MakeMeetingDists() {
 
     if (!g->dijkstraBidirectional(Cn->getInfo(), V0->getInfo())) {
         cout << "oi 7";
-        //throw NoPathFound(Cn, V0);
+        //throw
 
     }
     MakeMeetPath(meeting_path[n + 1][n], Cn->getInfo(), V0->getInfo());
@@ -135,7 +144,7 @@ void Solver::MakeMeetingDists() {
 
 int Solver::tspInit(vector<bool> &visited) {
 
-    int n = workers.size();
+    int n = meeting_points.size();
 
     visited = vector<bool>(n + 2, false);
 
@@ -212,7 +221,7 @@ vector<unsigned> Solver::tsp() {
         //cout<< g->findVertex(path[i-1])->getInfo()  << " " << g->findVertex(path[i])->getInfo()<< endl;
        //cout <<meeting_path[g->findVertex(path[i-1])->getInfo()][g->findVertex(path[i])->getInfo()].path.size() <<endl;
        for(auto v :meeting_path[g->findVertex(path[i-1])->getInfo()][g->findVertex(path[i])->getInfo()].path){
-           //cout << v<< endl;
+           cout << v<< endl;
            vertex_path.push_back(v);
        }
     }
@@ -220,5 +229,98 @@ vector<unsigned> Solver::tsp() {
 
 
     return vertex_path;
+}
+
+void Solver::tempResetVertexes() {
+    for ( auto *v: this->used_vertexes ){
+        v->visited =  false;
+    }
+    this->used_vertexes.clear();
+}
+
+void Solver::DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *currentVertex, MutablePriorityQueue<MeetingPoint> &meetingQueue,
+                             unsigned assignedMPoints){
+    if( assignedMPoints > d_max ) return;
+
+    currentVertex->visited = true;
+    //They used insert?
+    this->used_vertexes.push_back(currentVertex);
+
+    //Create Meeting point
+    MeetingPoint meetingPoint(currentVertex);
+
+    auto it = find(meeting_pointss.begin(),meeting_pointss.end(), meetingPoint);
+
+    if( it != meeting_pointss.end() ){
+        it->addWorker(worker);
+        worker->assigned = true;
+
+        if( it->isProcessed() ) meetingQueue.decreaseKey(&(*it));
+
+        else{
+            it->setProcessed(true); meetingQueue.insert(&(*it));
+        }
+
+    }
+
+    for(Edge<unsigned> *edge: currentVertex->adj ){
+        if( !(edge->getDest()->visited) ) DeepFirstSearch(worker, edge->getDest(), meetingQueue, assignedMPoints + edge->getWeight());
+    }
+}
+
+void Solver::assignMeetingPoints() {
+    MutablePriorityQueue<MeetingPoint> meetingQueue;
+
+    for (Vertex<unsigned> *v : this->g->getVertexSet()) v->visited = false;
+
+    for (Vertex<unsigned> *w : this->workers) {
+        tempResetVertexes();
+        DeepFirstSearch(w, w, meetingQueue);
+    }
+
+    size_t workerAssigned = 0;
+
+    while (!meetingQueue.empty()) {
+        MeetingPoint *meeting = meetingQueue.extractMin();
+        for (Vertex<unsigned> *w : meeting->getWorkers()) {
+            ++workerAssigned;
+            for (MeetingPoint &meet : this->meeting_pointss) {
+                if (meet.isProcessed() && meet != *meeting) {
+                    if (meet.removeWorker(w))
+                        meetingQueue.decreaseKey(&meet);
+                }
+            }
+        }
+    }
+
+    if (workerAssigned < this->workers.size()) cout << "Workers without a meeting point -> " << this->workers.size() - workerAssigned;
+    //throw WorkersWithoutMeetingPoint(this->workers.size() - worker_cnt);
+
+    //Remove meeting point if no worker is assigned to it
+    auto its = remove_if(meeting_pointss.begin(), meeting_pointss.end(),
+                      [](MeetingPoint &m) { return m.getWorkers().size() == 0; });
+
+    this->meeting_pointss.erase(its, meeting_pointss.end());
+
+    //May not need const & (vertexSet to but might need to be created a set)
+    for ( auto v : meeting_pointss){
+        v.getVertex()->vertexSet(MEETINGPOINT);
+
+        cout <<  "Vertex find -> " << v.getVertex()->getInfo() << endl;
+
+        meeting_points.push_back(g->findVertex(v.getVertex()->getInfo()));
+
+    }
+
+    for(auto v: workers){
+        if( ! v->assigned ){
+            cout << "V Info-> " << v->getInfo() << endl;
+
+            v->vertexSet(MEETINGPOINT);
+            meeting_points.push_back(v);
+        }
+    }
+    cout << "size >>" << meeting_points.size()<< endl;
+    cout << "size >>" << meeting_pointss.size()<< endl;
 }
 

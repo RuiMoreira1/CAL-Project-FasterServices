@@ -90,8 +90,16 @@ CMakeFiles/project.dir/GraphMaker.cpp.obj: ../utilities/MutablePriorityQueue.h
 CMakeFiles/project.dir/GraphMaker.cpp.obj: ../utilities/Position.h
 CMakeFiles/project.dir/GraphMaker.cpp.obj: ../GraphMaker.cpp
 
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../graph/Graph.h
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../include/MeetingPoint.h
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../utilities/MutablePriorityQueue.h
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../utilities/Position.h
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../MeetingPoint.cpp
+CMakeFiles/project.dir/MeetingPoint.cpp.obj: ../include/MeetingPoint.h
+
 CMakeFiles/project.dir/Solver.cpp.obj: ../graph/Graph.h
 CMakeFiles/project.dir/Solver.cpp.obj: ../include/GraphImporter.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../include/MeetingPoint.h
 CMakeFiles/project.dir/Solver.cpp.obj: ../include/Solver.h
 CMakeFiles/project.dir/Solver.cpp.obj: ../utilities/MutablePriorityQueue.h
 CMakeFiles/project.dir/Solver.cpp.obj: ../utilities/Position.h
@@ -118,6 +126,7 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.h
 CMakeFiles/project.dir/main.cpp.obj: ../graph/Graph.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/GraphImporter.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/GraphMaker.h
+CMakeFiles/project.dir/main.cpp.obj: ../include/MeetingPoint.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/Solver.h
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp

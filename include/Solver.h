@@ -9,6 +9,7 @@
 
 #include "Graph.h"
 #include "GraphImporter.h"
+#include "MeetingPoint.h"
 
 #define DEAD_EDGE pair<unsigned, unsigned>
 #define ASSIGNED_BUSES_TYPE vector<vector<unsigned>>
@@ -30,22 +31,19 @@ private:
     Vertex<unsigned> *Cn ;
 
     vector<Vertex<unsigned> *> used_vertexes;
-    //vector<MeetingPoint> meeting_points;
+    vector<MeetingPoint> meeting_pointss;
     vector<Vertex<unsigned> *> bus_stops;
     vector<vector<meetingPath>> meeting_path;
     vector<unsigned> bus_capacities;
 
-
-
-    void ResetUsedVertexes(void);
-
+    void tempResetVertexes();
 
     void MakeMeetPath(meetingPath &mp, unsigned const s, unsigned const t) const;
 
     void parseConfig(const string &config_file);
 
 public:
-    Solver(Graph<unsigned > *g);
+    Solver(Graph<unsigned > *g, double dmax);
 
 
 
@@ -90,13 +88,12 @@ public:
      *        list of all the Vertexes that must be passed on the shortest path
      *        (vertexes between them).
      */
-    vector<unsigned> reconstructPath(const vector<unsigned> &path);
-
-
+    vector<unsigned> reconstructPath(const vector<unsigned> &pat);
 
     void assignMeetingPoints();
 
-    ;
+    void DeepFirstSearch(Vertex<unsigned> *worker, Vertex<unsigned> *currentVertex, MutablePriorityQueue<MeetingPoint> &meetingQueue,
+                         unsigned assignedMPoints = 0);
 
     int tspInit(vector<bool> &visited);
 

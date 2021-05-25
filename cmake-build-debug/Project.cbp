@@ -550,6 +550,9 @@
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.cpp">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/MeetingPoint.cpp">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/Solver.cpp">
 			<Option target="project"/>
 		</Unit>
@@ -584,6 +587,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/GraphMaker.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/MeetingPoint.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/Solver.h">

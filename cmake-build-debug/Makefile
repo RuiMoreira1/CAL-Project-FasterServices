@@ -333,6 +333,33 @@ GraphMaker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/GraphMaker.cpp.s
 .PHONY : GraphMaker.cpp.s
 
+MeetingPoint.obj: MeetingPoint.cpp.obj
+
+.PHONY : MeetingPoint.obj
+
+# target to build an object file
+MeetingPoint.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/MeetingPoint.cpp.obj
+.PHONY : MeetingPoint.cpp.obj
+
+MeetingPoint.i: MeetingPoint.cpp.i
+
+.PHONY : MeetingPoint.i
+
+# target to preprocess a source file
+MeetingPoint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/MeetingPoint.cpp.i
+.PHONY : MeetingPoint.cpp.i
+
+MeetingPoint.s: MeetingPoint.cpp.s
+
+.PHONY : MeetingPoint.s
+
+# target to generate assembly for a file
+MeetingPoint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/MeetingPoint.cpp.s
+.PHONY : MeetingPoint.cpp.s
+
 Solver.obj: Solver.cpp.obj
 
 .PHONY : Solver.obj
@@ -548,6 +575,9 @@ help:
 	@echo ... GraphMaker.obj
 	@echo ... GraphMaker.i
 	@echo ... GraphMaker.s
+	@echo ... MeetingPoint.obj
+	@echo ... MeetingPoint.i
+	@echo ... MeetingPoint.s
 	@echo ... Solver.obj
 	@echo ... Solver.i
 	@echo ... Solver.s
