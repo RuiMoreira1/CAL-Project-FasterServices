@@ -24,6 +24,10 @@ public:
 
     void draw(const Graph<unsigned > *g);
 
+    void routeDraw(const Graph<unsigned> *g,vector<unsigned> vertex_path);
+
+    void view();
+
 };
 
 #endif //CAL_PROJETCT_FASTERSERVICES_GRAPHMAKER_H

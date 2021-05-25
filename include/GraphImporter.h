@@ -15,11 +15,13 @@ class GraphImporter{
 
     void importNodes(Graph<unsigned > *g,ifstream &NodesFile);
     void importEdges(Graph<unsigned > *g,ifstream &EdgesFile);
+    void importWorkers(Graph<unsigned > *g,ifstream &WorkersFile);
+    void importG_C(Graph<unsigned > *g, ifstream &G_CFile);
 
 public:
     GraphImporter();
 
-    Graph<unsigned> *importAll(const string NodesFile,const string EdgesFile);
+    Graph<unsigned> *importAll(const string NodesFile,const string EdgesFile,const string WorkersFile, const string G_CFile);
 
     vector<Vertex<unsigned> *> importCompany(Graph<unsigned> *g,const string &CompanyFile) const;
 };

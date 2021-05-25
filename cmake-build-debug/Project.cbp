@@ -550,6 +550,9 @@
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.cpp">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/Solver.cpp">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/Garage.cpp">
 			<Option target="project"/>
 		</Unit>
@@ -581,6 +584,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/GraphMaker.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/include/Solver.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/lib/GraphViewerCpp/SFML/include/SFML/Audio/AlResource.hpp">
@@ -1331,6 +1337,9 @@
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/utilities/Position.h">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/utilities/exception.h">
 			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/CMakeLists.txt">

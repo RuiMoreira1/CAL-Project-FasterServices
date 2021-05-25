@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/project.dir/GraphImporter.cpp.obj"
   "CMakeFiles/project.dir/GraphMaker.cpp.obj"
+  "CMakeFiles/project.dir/Solver.cpp.obj"
   "CMakeFiles/project.dir/fasterServices/Garage.cpp.obj"
   "CMakeFiles/project.dir/fasterServices/Vehicle.cpp.obj"
   "CMakeFiles/project.dir/fasterServices/Worker.cpp.obj"

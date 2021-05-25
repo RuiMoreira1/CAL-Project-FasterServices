@@ -333,6 +333,33 @@ GraphMaker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/GraphMaker.cpp.s
 .PHONY : GraphMaker.cpp.s
 
+Solver.obj: Solver.cpp.obj
+
+.PHONY : Solver.obj
+
+# target to build an object file
+Solver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Solver.cpp.obj
+.PHONY : Solver.cpp.obj
+
+Solver.i: Solver.cpp.i
+
+.PHONY : Solver.i
+
+# target to preprocess a source file
+Solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Solver.cpp.i
+.PHONY : Solver.cpp.i
+
+Solver.s: Solver.cpp.s
+
+.PHONY : Solver.s
+
+# target to generate assembly for a file
+Solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/Solver.cpp.s
+.PHONY : Solver.cpp.s
+
 fasterServices/Garage.obj: fasterServices/Garage.cpp.obj
 
 .PHONY : fasterServices/Garage.obj
@@ -521,6 +548,9 @@ help:
 	@echo ... GraphMaker.obj
 	@echo ... GraphMaker.i
 	@echo ... GraphMaker.s
+	@echo ... Solver.obj
+	@echo ... Solver.i
+	@echo ... Solver.s
 	@echo ... fasterServices/Garage.obj
 	@echo ... fasterServices/Garage.i
 	@echo ... fasterServices/Garage.s

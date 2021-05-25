@@ -18,16 +18,16 @@ typedef struct {
     vector<unsigned> path;
 } meetingPath;
 
-class ProblemSolver {
+class Solver {
 private:
-    GraphImporter importer;
     Graph<unsigned> *g;
     vector<Vertex<unsigned> *> workers;
+    vector<Vertex<unsigned> *> meeting_points;
     vector<DEAD_EDGE> dead_edges;
 
     double d_max = 0;
-    unsigned V0 = 0;
-    unsigned Cn = 0;
+    Vertex<unsigned> *V0 ;
+    Vertex<unsigned> *Cn ;
 
     vector<Vertex<unsigned> *> used_vertexes;
     //vector<MeetingPoint> meeting_points;
@@ -35,20 +35,24 @@ private:
     vector<vector<meetingPath>> meeting_path;
     vector<unsigned> bus_capacities;
 
-    void Import(const string &config_file);
+
 
     void ResetUsedVertexes(void);
+
 
     void MakeMeetPath(meetingPath &mp, unsigned const s, unsigned const t) const;
 
     void parseConfig(const string &config_file);
 
 public:
-    ProblemSolver(const string &NodesFile, const string &EdgesFile,const string &ConfigFile): importer(), g(importer.importAll(NodesFile, EdgesFile)) {
-        parseConfig(ConfigFile);};
+    Solver(Graph<unsigned > *g);
 
-    void readDeadEdges(const string &dead_edges_file);
-    vector<DEAD_EDGE_TYPE> &getDeadEdges(void) { return dead_edges; }
+
+
+    void findMeetingPoints();
+
+    void MakeMeetingDists();
+
     /**
      * @brief Normalize the Graph g coordinates based on graphImporter reported
      *        maximum and minimum values.
@@ -76,10 +80,10 @@ public:
     void fixGraph(void);
 
     Graph<unsigned> *getGraph(void) { return this->g; }
-    unsigned getV0(void) { return this->V0; }
+    /*unsigned getV0(void) { return this->V0; }
     unsigned getCn(void) { return this->Cn; }
     void setV0(unsigned V0) { this->V0 = V0; }
-    void setCn(unsigned Cn) { this->Cn = Cn; }
+    void setCn(unsigned Cn) { this->Cn = Cn; }*/
 
     /**
      * @brief Converts a given path of Vertex represented by their info into a
@@ -94,7 +98,7 @@ public:
 
     ;
 
-    size_t tspInit(vector<bool> &visited);
+    int tspInit(vector<bool> &visited);
 
     vector<unsigned> tsp();
 
@@ -108,6 +112,6 @@ public:
 
 
 
-}
+};
 
 #endif //CAL_PROJETCT_FASTERSERVICES_SOLVER_H

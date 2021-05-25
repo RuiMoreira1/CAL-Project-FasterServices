@@ -90,6 +90,13 @@ CMakeFiles/project.dir/GraphMaker.cpp.obj
  ../utilities/MutablePriorityQueue.h
  ../utilities/Position.h
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/GraphMaker.cpp
+CMakeFiles/project.dir/Solver.cpp.obj
+ ../graph/Graph.h
+ ../include/GraphImporter.h
+ ../include/Solver.h
+ ../utilities/MutablePriorityQueue.h
+ ../utilities/Position.h
+ C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/Solver.cpp
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/Garage.cpp
  C:/Users/ZPedro/Documents/cal/CAL-Quickstart/Nova pasta/CAL-PROJETCT-FasterServices/fasterServices/Garage.h
@@ -112,6 +119,7 @@ CMakeFiles/project.dir/main.cpp.obj
  ../graph/Graph.h
  ../include/GraphImporter.h
  ../include/GraphMaker.h
+ ../include/Solver.h
  ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp
  ../lib/GraphViewerCpp/SFML/include/SFML/Graphics/BlendMode.hpp

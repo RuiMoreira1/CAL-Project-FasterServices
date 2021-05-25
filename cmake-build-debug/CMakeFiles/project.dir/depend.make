@@ -90,6 +90,13 @@ CMakeFiles/project.dir/GraphMaker.cpp.obj: ../utilities/MutablePriorityQueue.h
 CMakeFiles/project.dir/GraphMaker.cpp.obj: ../utilities/Position.h
 CMakeFiles/project.dir/GraphMaker.cpp.obj: ../GraphMaker.cpp
 
+CMakeFiles/project.dir/Solver.cpp.obj: ../graph/Graph.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../include/GraphImporter.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../include/Solver.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../utilities/MutablePriorityQueue.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../utilities/Position.h
+CMakeFiles/project.dir/Solver.cpp.obj: ../Solver.cpp
+
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: ../fasterServices/Garage.cpp
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: ../fasterServices/Garage.h
 CMakeFiles/project.dir/fasterServices/Garage.cpp.obj: ../fasterServices/Vehicle.h
@@ -111,6 +118,7 @@ CMakeFiles/project.dir/fasterServices/client.cpp.obj: ../fasterServices/client.h
 CMakeFiles/project.dir/main.cpp.obj: ../graph/Graph.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/GraphImporter.h
 CMakeFiles/project.dir/main.cpp.obj: ../include/GraphMaker.h
+CMakeFiles/project.dir/main.cpp.obj: ../include/Solver.h
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Config.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics.hpp
 CMakeFiles/project.dir/main.cpp.obj: ../lib/GraphViewerCpp/SFML/include/SFML/Graphics/BlendMode.hpp

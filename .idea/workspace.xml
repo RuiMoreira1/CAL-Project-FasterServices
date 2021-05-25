@@ -20,12 +20,12 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="sfml-network" />
       <config projectName="Project" targetName="project" />
-      <config projectName="Project" targetName="sfml-main" />
-      <config projectName="Project" targetName="sfml-graphics" />
+      <config projectName="Project" targetName="sfml-network" />
       <config projectName="Project" targetName="sfml-system" />
       <config projectName="Project" targetName="sfml-window" />
+      <config projectName="Project" targetName="sfml-graphics" />
+      <config projectName="Project" targetName="sfml-main" />
       <config projectName="Project" targetName="sfml-audio" />
       <config projectName="Project" targetName="graphviewer" />
     </generated>
@@ -38,16 +38,40 @@
   <component name="ChangeListManager">
     <list default="true" id="4e3fad70-8d84-4fb4-85b2-277e857ee5e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphImporter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphImporter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphMaker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphMaker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GraphImporter.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GraphImporter.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GraphMaker.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GraphMaker.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Main/CMakeFiles/sfml-main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/GraphViewerCpp/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/Graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/GraphImporter.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GraphImporter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/GraphMaker.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GraphMaker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Solver.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Solver.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +104,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="CMake Application.project">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
@@ -179,7 +204,10 @@
       <workItem from="1621437348472" duration="8135000" />
       <workItem from="1621445560535" duration="6194000" />
       <workItem from="1621539951322" duration="3362000" />
-      <workItem from="1621695007321" duration="7863000" />
+      <workItem from="1621695007321" duration="9126000" />
+      <workItem from="1621865193990" duration="35000" />
+      <workItem from="1621865248908" duration="16996000" />
+      <workItem from="1621887972389" duration="15834000" />
     </task>
     <servers />
   </component>
@@ -199,25 +227,57 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="162" key="GridCell.Tab.0.bottom" timestamp="1621863701993">
+    <state x="2644" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621866295023">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621863701993" />
+    <state x="2644" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621866295023" />
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1621912873103">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621912873103" />
     <state width="1237" height="90" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1621817452388" />
-    <state width="1877" height="162" key="GridCell.Tab.0.center" timestamp="1621863701992">
+    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1621912873103">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="162" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621863701992" />
+    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621912873103" />
     <state width="1237" height="90" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1621817452388" />
-    <state width="1877" height="162" key="GridCell.Tab.0.left" timestamp="1621863701988">
+    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1621912873103">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="162" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621863701988" />
+    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621912873103" />
     <state width="1237" height="90" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1621817452388" />
-    <state width="1877" height="162" key="GridCell.Tab.0.right" timestamp="1621863701992">
+    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1621912873103">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="162" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621863701992" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621912873103" />
     <state width="1237" height="90" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1621817452388" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1621911643429">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621911643429" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1621911643429">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621911643429" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1621911643429">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621911643429" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1621911643429">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621911643429" />
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1621865228152">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="165" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621865228152" />
+    <state x="2656" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1621882454749">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2656" y="305" key="refactoring.ChangeSignatureDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621882454749" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621903350597">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621903350597" />
   </component>
 </project>
